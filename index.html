@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            animation: bc 3s linear infinite;
+        }
+        @keyframes bc {
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: green;
+            }
+            50%{
+                background-color: green;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                background-color: red;
+            }
+            
+        }
+        img{
+            mix-blend-mode: screen;
+            position: absolute;
+            animation: move 5s linear infinite;
+        }
+        @keyframes move{
+            0%{
+                left: 0%;
+            }
+            100%{
+                left: 100%;
+                transform: translateX(-100%);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="bird.webp" alt="">
+</body>
+</html>
